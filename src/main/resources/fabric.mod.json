@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "fuckfirmament",
+	"version": "${version}",
+	"name": "FuckFirmament",
+	"description": "Blocks Firmament mod from sending mod announcement packets to servers.",
+	"authors": [
+		"axle.coffee"
+	],
+	"license": "MIT",
+	"icon": "assets/fuckfirmament/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"coffee.axle.antifirm.FuckFirmament"
+		]
+	},
+	"mixins": [
+		"fuckfirmament.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21"
+	}
+}
